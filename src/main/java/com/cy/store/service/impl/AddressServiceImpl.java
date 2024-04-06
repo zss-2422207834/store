@@ -27,6 +27,7 @@ public class AddressServiceImpl implements IAddressService {
         }
         if(i==0){
             address.setIsDefault(1);
+            //dsad
         }
         address.setUid(uid);
         address.setCreatedUser(username);
