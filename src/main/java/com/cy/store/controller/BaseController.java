@@ -22,7 +22,10 @@ public class BaseController {
         } else if(e instanceof PasswordNotMatchException){
             result.setState(4002);
             result.setMessage("您输入的密码有误");
-        } else if(e instanceof InsertException){
+        }  else if(e instanceof AddressCountLimitException){
+            result.setState(4003);
+            result.setMessage("地址超出限制");
+        }else if(e instanceof InsertException){
             result.setState(5000);
             result.setMessage("注册时产生为止异常");
         }else if(e instanceof UpdateException){
