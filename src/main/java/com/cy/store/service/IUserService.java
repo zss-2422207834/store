@@ -21,8 +21,8 @@ public interface IUserService {
 
     /**
      * 更改用户信息
-     * @param username  用户名
-     * @param uid   uid 控制层从session中获取的uid 谁登录改谁的信息 而前端表单提供username
+     * @param ("username")  用户名
+     * @param ("uid") 控制层从session中获取的uid 谁登录改谁的信息 而前端表单提供username
      *              ，phone，email，gender没有uid所以需要从session获取
      * @param user  封装着电话号，邮箱性别的对象
      */
